@@ -1,4 +1,5 @@
 ﻿using System;
+using static System.Console;
 
 namespace SourceControlAssignment
 {
@@ -48,7 +49,8 @@ namespace SourceControlAssignment
 
         static void SayHello()
         {
-            Console.WriteLine("Hello!");
+            Console.WriteLine("Hello, Justin! Welcome to your Git practice app.");
+            Console.WriteLine("This message was added in the feature-greeting-method branch.");
         }
 
         static void AddNumbers()
