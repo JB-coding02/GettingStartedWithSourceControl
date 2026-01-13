@@ -58,7 +58,10 @@ namespace SourceControlAssignment
 
         static void ShowTime()
         {
-            Console.WriteLine("ShowTime method not implemented yet.");
+            DateTime now = DateTime.Now;
+
+            Console.WriteLine($"Current time: {now:MMMM dd, yyyy - hh:mm tt}");
+            Console.WriteLine("This formatted time feature was added in the feature-time-formatting branch.");
         }
     }
 }
