@@ -53,8 +53,24 @@ namespace SourceControlAssignment
 
         static void AddNumbers()
         {
-            Console.WriteLine("AddNumbers method not implemented yet.");
+            Console.Write("Enter first number: ");
+            if (!int.TryParse(Console.ReadLine(), out int a))
+            {
+                Console.WriteLine("Invalid input.");
+                return;
+            }
+
+            Console.Write("Enter second number: ");
+            if (!int.TryParse(Console.ReadLine(), out int b))
+            {
+                Console.WriteLine("Invalid input.");
+                return;
+            }
+
+            Console.WriteLine($"Result: {a + b}");
+            Console.WriteLine("This method was updated in the feature-math-method branch.");
         }
+
 
         static void ShowTime()
         {
